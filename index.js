@@ -1,6 +1,6 @@
 //call the elements and assign to variables
 //use let for the inputEl since it will be used multiple times
-let inputEl = document.getElementById("input-num")
+const inputEl = document.getElementById("input-num")
 
 //use const for the other id's
 const textLength = document.getElementById("convert-length")
@@ -11,8 +11,10 @@ const btnConvert = document.getElementById("btn-convert")
 
 //create a click eventListener for the convert button
 btnConvert.addEventListener("click", function () {
+    //add variable to be used inside the function
+    let inputValue = inputEl.value
     //add validation if input is empty
-    if (inputEl.value === "") {
+    if (inputValue === "") {
         alert("Put a number first!")
         //clear text if the input value is empty
         textLength.innerHTML = ""
@@ -25,13 +27,13 @@ btnConvert.addEventListener("click", function () {
         //get the conversion unit and multiply it to the inputEl's value
         //round off the value using toFixed to 3 decimal places
         textLength.innerHTML = `
-            ${inputEl.value} meters = ${(inputEl.value * 3.28084).toFixed(3)} feet | ${inputEl.value} feet = ${(inputEl.value * 0.3048000097536).toFixed(3)} meters
+            ${inputValue} meters = ${(inputValue * 3.28084).toFixed(3)} feet | ${inputValue} feet = ${(inputValue * 0.3048000097536).toFixed(3)} meters
         `
         textVolume.innerHTML = `
-            ${inputEl.value} liters = ${(inputEl.value * 0.264172).toFixed(3)} gallons | ${inputEl.value} gallons = ${(inputEl.value * 3.78541).toFixed(3)} liters
+            ${inputValue} liters = ${(inputValue * 0.264172).toFixed(3)} gallons | ${inputValue} gallons = ${(inputValue * 3.78541).toFixed(3)} liters
         `
         textMass.innerHTML = `
-            ${inputEl.value} kilos = ${(inputEl.value * 2.20462).toFixed(3)} pounds | ${inputEl.value} pounds = ${(inputEl.value * 0.453592).toFixed(3)} kilos
+            ${inputValue} kilos = ${(inputValue * 2.20462).toFixed(3)} pounds | ${inputValue} pounds = ${(inputValue * 0.453592).toFixed(3)} kilos
         `
     }
 })
