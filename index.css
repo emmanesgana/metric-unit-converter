@@ -30,7 +30,7 @@ main {
 }
 
 #container {
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     width: 550px;
     height: 729px;
 }
@@ -40,6 +40,7 @@ main {
     color: #fff;
     width: 550px;
     height: 285px;
+    margin-bottom: 13px;
 }
 
 .title{
@@ -65,28 +66,43 @@ main {
     width: 117px;
     height: 42px;
     background-color: #fff;
+    border: none;
     border-radius: 5px;
     color: #3d3d3d;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+    cursor: pointer;
 }
 
 
 .conversion-section {
     background-color: white;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
     width: 500px;
     height: 108.57px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
+
 }
 
 .conversion-header {
     color: #5A537B;
     font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 15px 0 0 0;
+    width: 346px;
+    height: 25px;
 }
 
 .convert-text {
     color: #353535;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 20px;
+    margin-top: 15px 0 0 0;
+    width: 346px;
+    height: 25px;
 }
