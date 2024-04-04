@@ -10,12 +10,26 @@
     <title>Metric Unit Converter</title>
 </head>
 <body>
-    <main>
+    <main class="flex">
         <div id="container">
-            <div id="upper-section">
+            <div id="upper-section" class="flex">
                 <h1 class="title">Metric/Imperial Unit Conversion</h1>
                 <input id="input-num" type="number">
                 <button id="btn-convert">Convert</button>
+            </div>
+            <div id="lower-section" class="flex">
+                <div class="conversion-section">
+                    <h2 class="conversion-header">Length (Meter/Feet)</h2>
+                    <p id="convert-length" class="convert-text"></p>
+                </div>
+                <div class="conversion-section">
+                    <h2 class="conversion-header">Volume (Liters/Gallons)</h2>
+                    <p id="convert-volume" class="convert-text"></p>
+                </div>
+                <div class="conversion-section">
+                    <h2 class="conversion-header">Mass (Kilograms/Pounds)</h2>
+                    <p id="convert-mass" class="convert-text"></p>
+                </div>
             </div>
         </div>
     </main>

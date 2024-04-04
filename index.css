@@ -4,7 +4,7 @@ body {
     font-family: "Inter", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-top: 0;
 }
 
@@ -17,17 +17,20 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-main {
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+main {
     margin:50px 0 50px 0;
 
 }
 
 #container {
-    background-color: #fff;
+    background-color: #f4f4f4;
     width: 550px;
     height: 729px;
 }
@@ -37,10 +40,6 @@ main {
     color: #fff;
     width: 550px;
     height: 285px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .title{
@@ -71,4 +70,23 @@ main {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
+}
+
+
+.conversion-section {
+    background-color: white;
+    width: 500px;
+    height: 108.57px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.conversion-header {
+    color: #5A537B;
+    font-size: 20px;
+}
+
+.convert-text {
+    color: #353535;
 }
